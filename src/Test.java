@@ -17,7 +17,7 @@ public class Test {
 
 	}
 
-	// 插入法
+	// 插入法,原理是每次把一个新数据插入已经排好顺序的有序数据中,内层循环遍历的对象是排好序的数据
 	public static void charu(int[] data) {
 		int temp;
 		for (int i = 1; i < data.length; i++) {
@@ -29,7 +29,7 @@ public class Test {
 		}
 	}
 
-	// 冒泡法
+	// 冒泡法,区别于插入法,冒泡法的内层循环遍历的对象是未排好序的数据,已经排序的数据保持不动,所以内外循环方向是一致的.
 	public static void maopao(int[] data) {
 		int temp;
 		for (int i = 0; i < data.length - 1; i++) {
@@ -43,7 +43,7 @@ public class Test {
 		}
 	}
 
-	// 选择法
+	// 选择法,TODO
 	public static void xuanze(int[] data) {
 		int temp;
 		for (int i = 0; i < data.length; i++) {
